@@ -1,0 +1,108 @@
+@font-face {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;900&display=swap");
+}
+:root {
+  --ff-primary: "M PLUS Rounded 1c", sans-serif;
+  --fw-reg: 400;
+  --fw-bold: 900;
+
+  --bg-color: #edeae5;
+  --acc-color: #691d21;
+  --txt-color: #a3a3a5;
+  --dark-color: black;
+
+  --fs-h1: 3em;
+  --fs-h2: 0.75em;
+  --fs-h3: 1em;
+  --fs-p: 1em;
+}
+@media (min-width: 800px) {
+  :root {
+    --fs-h1: 4.5em;
+    --fs-h2: 1.5em;
+    --fs-h3: 1.15em;
+    --fs-body: 1.125em;
+  }
+}
+
+.wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 72.5em;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+/* Card */
+
+article {
+  background-color: white;
+  width: 350px;
+}
+article img {
+  width: 350px;
+}
+
+/*Typography*/
+
+.brand {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-bold);
+  padding-left: 0.6em;
+  padding-right: 0.5em;
+}
+
+.name {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-reg);
+  text-transform: uppercase;
+  color: var(--txt-color);
+  letter-spacing: 0.1em;
+  margin-left: 0.5em;
+  text-align: left;
+}
+.name {
+  border-bottom: 1px solid var(--txt-color);
+  margin: 0.5em;
+  padding-bottom: 5px;
+}
+
+.price,
+.colours,
+.instock {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-bold);
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  border-bottom: 1px solid var(--txt-color);
+  padding-bottom: 5px;
+}
+
+.info {
+  border: 1px solid var(--txt-color);
+  margin: 0.5em;
+  position: relative;
+  float: center;
+}
+
+p {
+  text-align: center;
+}
+a {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-bold);
+  color: var(--acc-color);
+  border: 1px solid var(--acc-color);
+  position: relative;
+  text-decoration: none;
+  padding: 0.25em;
+}
