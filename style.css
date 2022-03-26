@@ -106,3 +106,10 @@ a {
   text-decoration: none;
   padding: 0.25em;
 }
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-column-gap: 0.5em;
+  grid-row-gap: 0.5em;
+}
